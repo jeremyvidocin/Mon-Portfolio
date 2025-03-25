@@ -34,10 +34,7 @@ const sitemap = [
       label: 'LinkedIn',
       href: 'https://www.linkedin.com/in/jérémy-vidocin-b547032a2/'
     },
-    {
-      label: 'CodePen',
-      href: 'https://codepen.io/codewithsadee'
-    }
+    
   ];
 
 const Footer = () => {
