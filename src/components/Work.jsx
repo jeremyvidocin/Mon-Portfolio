@@ -6,7 +6,7 @@ const works = [
       imgSrc: '/images/HTAuto.png',
       title: 'Site web concession',
       tags: ['MVC', 'Development', 'PHP', 'MySQL'],
-      projectLink: 'https://musify-5al0.onrender.com/'
+      projectLink: 'https://github.com/jeremyvidocin/HT-Auto'
     },
     {
       imgSrc: '/images/lavage-auto.png',

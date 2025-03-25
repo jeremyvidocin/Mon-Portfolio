@@ -39,7 +39,7 @@ const Hero = () =>{
                         <ButtonPrimary
                         label="Télécharger mon CV"
                         icon="download"
-                        href="/public/resume/jeremy-vidocin-cv.pdf"
+                        href="resume/jeremy-vidocin-cv.pdf"
                         download="Jeremy_Vidocin_CV.pdf"
                         
                         />
