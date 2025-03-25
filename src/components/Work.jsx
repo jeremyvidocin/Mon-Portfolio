@@ -10,9 +10,9 @@ const works = [
     },
     {
       imgSrc: '/images/lavage-auto.png',
-      title: 'Free stock photo app',
-      tags: ['API', 'SPA'],
-      projectLink: 'https://pixstock-official.vercel.app/'
+      title: 'Site web lavage auto',
+      tags: ['MVC', 'Development', 'PHP', 'MySQL', 'PDF'],
+      projectLink: 'https://github.com/jeremyvidocin/HT-Auto'
     },
     {
       imgSrc: 'images/Cream Simple Get App Instagram Story.png',
@@ -24,19 +24,19 @@ const works = [
       imgSrc: '/images/project-4.jpg',
       title: 'Real state website',
       tags: ['Web-design', 'Development'],
-      projectLink: 'https://github.com/codewithsadee-org/wealthome'
+      projectLink: ''
     },
     {
       imgSrc: '/images/project-5.jpg',
       title: 'eCommerce website',
       tags: ['eCommerce', 'Development'],
-      projectLink: 'https://github.com/codewithsadee/anon-ecommerce-website'
+      projectLink: ''
     },
     {
       imgSrc: '/images/project-6.jpg',
       title: 'vCard Personal portfolio',
       tags: ['Web-design', 'Development'],
-      projectLink: 'https://github.com/codewithsadee/vcard-personal-portfolio'
+      projectLink: ''
     },
   ];
 
