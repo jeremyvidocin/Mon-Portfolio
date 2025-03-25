@@ -3,22 +3,22 @@ import ProjectCard from "./ProjectCard";
 
 const works = [
     {
-      imgSrc: '/images/project-1.jpg',
-      title: 'Full stack music app',
-      tags: ['API', 'MVC', 'Development'],
+      imgSrc: '/images/HTAuto.png',
+      title: 'Site web concession',
+      tags: ['MVC', 'Development', 'PHP', 'MySQL'],
       projectLink: 'https://musify-5al0.onrender.com/'
     },
     {
-      imgSrc: '/images/project-2.jpg',
+      imgSrc: '/images/lavage-auto.png',
       title: 'Free stock photo app',
       tags: ['API', 'SPA'],
       projectLink: 'https://pixstock-official.vercel.app/'
     },
     {
-      imgSrc: '/images/project-3.jpg',
-      title: 'Recipe app',
-      tags: ['Development', 'API'],
-      projectLink: ''
+      imgSrc: 'images/Cream Simple Get App Instagram Story.png',
+      title: 'Application Météo',
+      tags: ['Development', 'API','Flutter','Dart'],
+      projectLink: 'https://github.com/jeremyvidocin/weather-app'
     },
     {
       imgSrc: '/images/project-4.jpg',
