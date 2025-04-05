@@ -6,7 +6,7 @@ import { ReactLenis } from 'lenis/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from '@gsap/react';
-
+import { Analytics } from "@vercel/analytics/react"
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -23,6 +23,7 @@ import Footer from "./components/Footer";
 import Experience from './components/Experience';
 import Certifications from './components/Certification';
 import Education from './components/Education';
+import CompetenceSheet from './components/CompetenceSheet';
 import { element } from 'prop-types';
 
 const App = ()=>{
@@ -53,7 +54,8 @@ const App = ()=>{
     <About/>
     <Education/>
     {/* <Skill/> */}
-    <Experience/> 
+    <Experience/>
+    <CompetenceSheet/> 
     <Certifications/>
     <Work/>
     {/* <Review/> */}
