@@ -20,24 +20,6 @@ const works = [
       tags: ['Development', 'API','Flutter','Dart'],
       projectLink: 'https://github.com/jeremyvidocin/weather-app'
     },
-    {
-      imgSrc: '/images/project-4.jpg',
-      title: 'Real state website',
-      tags: ['Web-design', 'Development'],
-      projectLink: ''
-    },
-    {
-      imgSrc: '/images/project-5.jpg',
-      title: 'eCommerce website',
-      tags: ['eCommerce', 'Development'],
-      projectLink: ''
-    },
-    {
-      imgSrc: '/images/project-6.jpg',
-      title: 'vCard Personal portfolio',
-      tags: ['Web-design', 'Development'],
-      projectLink: ''
-    },
   ];
 
 const Work = () => {
