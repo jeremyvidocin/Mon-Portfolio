@@ -23,6 +23,7 @@ import Experience from './components/Experience';
 import Certifications from './components/Certification';
 import Education from './components/Education';
 import CompetenceSheet from './components/CompetenceSheet';
+import TechWatch from './components/TechWatch';
 import { element } from 'prop-types';
 
 const App = ()=>{
@@ -52,9 +53,10 @@ const App = ()=>{
     <Hero/>
     <About/>
     <Education/>
-    {/* <Skill/> */}
+    <Skill/>
     <Experience/>
-    <CompetenceSheet/> 
+    <CompetenceSheet/>
+    <TechWatch/> 
     <Certifications/>
     <Work/>
     {/* <Review/> */}

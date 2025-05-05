@@ -37,7 +37,7 @@ const Navbar = ({ navOpen }) => {
 
     const navItems = [
         {
-          label: 'Acceuil',
+          label: 'Accueil',
           link: '#home',
           className: 'nav-link active',
           ref: lastActiveLink

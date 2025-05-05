@@ -4,7 +4,7 @@ import { ButtonPrimary } from "./Button";
 
 const sitemap = [
     {
-      label: 'Acceuil',
+      label: 'Accueil',
       href: '#home'
     },
     {
@@ -12,12 +12,16 @@ const sitemap = [
       href: '#about'
     },
     {
+      label: 'Veille Tech',  // Nouvel élément
+      href: '#techwatch'
+    },
+    {
       label: 'Projets',
       href: '#work'
     },
     {
       label: 'Certifications',
-      href: '#reviews'
+      href: '#certifications'
     },
     {
       label: 'Me Contacter',

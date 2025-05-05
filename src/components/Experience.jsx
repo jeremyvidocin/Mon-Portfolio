@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { ButtonPrimary } from "./Button";
 
 const Experience = () => {
   const experiences = [
@@ -7,22 +8,42 @@ const Experience = () => {
       title: "Stagiaire en Développement",
       company: "GIDM",
       duration: "9 Décembre 2024 - 17 Janvier 2025",
-      description: "Développement et maintenance de sites web pour divers clients.",
-      imgSrc: "images/Capture d'écran 2025-03-06 124810.png"
+      description: "Participation au développement de nouvelles fonctionnalités pour l'application web de l'entreprise.",
+      imgSrc: "images/Capture d'écran 2025-03-06 124810.png",
+      documents: [
+        { 
+          type: "Attestation de stage", 
+          path: "/resume/stage-gidm-attestation.pdf" 
+        },
+        { 
+          type: "Convention de stage", 
+          path: "/resume/stage-gidm-convention.pdf" 
+        }
+      ]
     },
     {
       title: "Agent administratif",
       company: "URSSAF",
       duration: "Juillet 2024 - Septembre 2024",
-      description: "Participation au développement de nouvelles fonctionnalités pour l'application web de l'entreprise.",
+      description: "Assistance aux tâches administratives du service recouvrement : traitement de courriers, saisie de données, classement de documents et soutien aux agents dans le suivi des dossiers cotisants.",
       imgSrc: "images/channels4_profile.jpg"
     },
     {
       title: "Stagiaire en Développement",
       company: "Alpha Developpement",
       duration: "Mai 2024 - Juin 2024",
-      description: "Participation au développement de nouvelles fonctionnalités pour l'application web de l'entreprise.",
-      imgSrc: "images/Capture d'écran 2025-03-06 124303.png"
+      description: "Développement et maintenance de sites web pour divers clients.",
+      imgSrc: "images/Capture d'écran 2025-03-06 124303.png",
+      documents: [
+        { 
+          type: "Attestation de stage", 
+          path: "/resume/stage-alpha-attestation.pdf" 
+        },
+        { 
+          type: "Convention de stage", 
+          path: "/resume/stage-alpha-convention.pdf" 
+        }
+      ]
     }
   ];
 
@@ -59,7 +80,26 @@ const Experience = () => {
                         <p className="text-zinc-400 text-sm">{experience.duration}</p>
                       </div>
                     </div>
-                    <p className="text-zinc-400">{experience.description}</p>
+                    <p className="text-zinc-400 mb-4">{experience.description}</p>
+                    
+                    {/* Nouveaux boutons pour les documents */}
+                    {experience.documents && (
+                      <div className="pt-4 mt-2 border-t border-zinc-700">
+                        <p className="text-zinc-400 text-sm mb-2">Documents associés :</p>
+                        <div className="flex flex-wrap gap-2">
+                          {experience.documents.map((doc, docIndex) => (
+                            <ButtonPrimary
+                              key={docIndex}
+                              href={doc.path}
+                              target="_blank"
+                              label={doc.type}
+                              icon="description"
+                              classes="text-xs py-1 px-2"
+                            />
+                          ))}
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </div>
                 
@@ -98,7 +138,26 @@ const Experience = () => {
                         <p className="text-zinc-400 text-xs">{experience.duration}</p>
                       </div>
                     </div>
-                    <p className="text-zinc-400 text-sm">{experience.description}</p>
+                    <p className="text-zinc-400 text-sm mb-4">{experience.description}</p>
+                    
+                    {/* Documents version mobile */}
+                    {experience.documents && (
+                      <div className="pt-3 mt-2 border-t border-zinc-700">
+                        <p className="text-zinc-400 text-xs mb-2">Documents :</p>
+                        <div className="flex flex-wrap gap-2">
+                          {experience.documents.map((doc, docIndex) => (
+                            <ButtonPrimary
+                              key={docIndex}
+                              href={doc.path}
+                              target="_blank"
+                              label={doc.type}
+                              icon="description"
+                              classes="text-xs py-1 px-2"
+                            />
+                          ))}
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </div>
               ))}
@@ -117,7 +176,13 @@ Experience.propTypes = {
       company: PropTypes.string.isRequired,
       duration: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
-      imgSrc: PropTypes.string.isRequired
+      imgSrc: PropTypes.string.isRequired,
+      documents: PropTypes.arrayOf(
+        PropTypes.shape({
+          type: PropTypes.string.isRequired,
+          path: PropTypes.string.isRequired
+        })
+      )
     })
   )
 };

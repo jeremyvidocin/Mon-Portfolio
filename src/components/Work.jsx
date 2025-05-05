@@ -12,13 +12,31 @@ const works = [
       imgSrc: '/images/lavage-auto.png',
       title: 'Site web lavage auto',
       tags: ['MVC', 'Development', 'PHP', 'MySQL', 'PDF'],
-      projectLink: 'https://github.com/jeremyvidocin/HT-Auto'
+      projectLink: 'https://github.com/jeremyvidocin/car-wash'
     },
     {
       imgSrc: 'images/Cream Simple Get App Instagram Story.png',
       title: 'Application Météo',
       tags: ['Development', 'API','Flutter','Dart'],
       projectLink: 'https://github.com/jeremyvidocin/weather-app'
+    },
+    {
+      imgSrc: '/images/aichi.jpg',
+      title: 'Aichi Gestion',
+      tags: ['Java', 'SQL','MVC',],
+      projectLink: 'https://github.com/SioTyron/Aichibaw'
+    },
+    {
+      imgSrc: '/images/biblio.jpg',
+      title: 'Bibliothèque de Jeu',
+      tags: ['WinForm', 'C#','SQL'],
+      projectLink: 'https://github.com/jeremyvidocin/ManagerDeJeu'
+    },
+    {
+      imgSrc: '/images/cloud.jpg',
+      title: 'Système Cloud',
+      tags: ['PHP', 'MySQL','MVC'],
+      projectLink: 'https://github.com/jeremyvidocin/Drive-docker'
     },
   ];
 
