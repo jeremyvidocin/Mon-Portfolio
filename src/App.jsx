@@ -50,16 +50,15 @@ const App = ()=>{
   <ReactLenis root>
   <Header/>
   <main>
-    <Hero/>
+  <Hero/>
     <About/>
     <Education/>
-    <Skill/>
     <Experience/>
-    <CompetenceSheet/>
-    <TechWatch/> 
-    <Certifications/>
+    <Skill/>
     <Work/>
-    {/* <Review/> */}
+    <CompetenceSheet/>
+    <Certifications/>
+    <TechWatch/> 
     <Contact/>
     
   </main>

@@ -1,22 +1,15 @@
 import { useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 
-
-
 const Navbar = ({ navOpen }) => {
     const lastActiveLink = useRef();
     const activeBox = useRef();
 
     const initActiveBox = () =>{
-        
         activeBox.current.style.top = lastActiveLink.current.offsetTop + 'px';
         activeBox.current.style.left = lastActiveLink.current.offsetLeft + 'px';
         activeBox.current.style.width = lastActiveLink.current.offsetWidth + 'px';
         activeBox.current.style.height = lastActiveLink.current.offsetHeight + 'px';
-
-
-
-
     }
 
     useEffect(initActiveBox, []);
@@ -31,10 +24,9 @@ const Navbar = ({ navOpen }) => {
         activeBox.current.style.left = event.target.offsetLeft + 'px';
         activeBox.current.style.width = event.target.offsetWidth + 'px';
         activeBox.current.style.height = event.target.offsetHeight + 'px';
-
     }
 
-
+    // Mise à jour de l'ordre des éléments de navigation pour correspondre à l'ordre des sections
     const navItems = [
         {
           label: 'Accueil',
@@ -43,13 +35,24 @@ const Navbar = ({ navOpen }) => {
           ref: lastActiveLink
         },
         {
-          label: 'A propos',
+          label: 'À propos',
           link: '#about',
           className: 'nav-link'
         },
         {
-          label: 'Expérience',
+          label: 'Formation',
+          link: '#education',
+          className: 'nav-link'
+        },
+        {
+          label: 'Expériences',
           link: '#experience',
+          className: 'nav-link'
+        },
+        
+        {
+          label: 'Projets',
+          link: '#work',
           className: 'nav-link'
         },
         {
@@ -58,11 +61,10 @@ const Navbar = ({ navOpen }) => {
           className: 'nav-link'
         },
         {
-          label: 'Projets',
-          link: '#work',
+          label: 'Veille',
+          link: '#techwatch',
           className: 'nav-link'
         },
-        
         {
           label: 'Contact',
           link: '#contact',
@@ -90,9 +92,7 @@ const Navbar = ({ navOpen }) => {
             className="active-box"
             ref={activeBox}
             ></div>
-
         </nav>
-
     )
 }
 
