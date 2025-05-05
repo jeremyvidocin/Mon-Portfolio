@@ -10,7 +10,7 @@ const Certifications = () => {
       date: "Janvier 2024",
       imgSrc: "/images/pix.png",
       category: "Digital",
-      certificateUrl: "/certifications/certificat-pix.pdf",
+      certificateUrl: "/certifications/pix-certification.pdf",
       badges: ["Officiel", "National"],
       status: "completed"
     },
