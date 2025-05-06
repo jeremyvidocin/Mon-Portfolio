@@ -48,7 +48,7 @@ const Footer = () => {
                 <div className="lg:grid lg:grid-cols-2">
                     <div className="mb-10">
                         <h2 className="headline-1 mb-8 lg:max-w-[12ch reveal-up">
-                            Travaillons ensemble dès maintenant!
+                            Travaillons ensemble dès maintenant !
                         </h2>
                         <ButtonPrimary
                         href="mailto:jeremyvidocin@gmail.com"

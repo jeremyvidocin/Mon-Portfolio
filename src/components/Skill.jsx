@@ -117,11 +117,6 @@ const skillItem = [
     imgSrc: '/images/xampp.svg',
     label: 'XAMPP',
     desc: 'Environnement local'
-  },
-  {
-    imgSrc: '/images/laravel.svg',
-    label: 'Laravel',
-    desc: 'Framework PHP'
   }
 ];
 
