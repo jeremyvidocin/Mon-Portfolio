@@ -71,6 +71,16 @@ const Certifications = () => {
     
     // Certifications en cours
     {
+      title: "TOEIC - Test of English for International Communication",
+      issuer: "ETS Global",
+      date: "Examen prévu le 21 mai 2025",
+      imgSrc: "/images/toeic-logo.png",
+      category: "Langues",
+      progress: 85, // pourcentage d'avancement
+      status: "in-progress",
+      infoUrl: "https://www.etsglobal.org/fr/fr/test-de-anglais-toeic"
+    },
+    {
       title: "JavaScript Algorithms and Data Structures",
       issuer: "FreeCodeCamp",
       date: "En cours - Fin prévue Juin 2025",
